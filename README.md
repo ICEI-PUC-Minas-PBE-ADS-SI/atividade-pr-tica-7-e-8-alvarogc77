@@ -20,7 +20,7 @@ Leia o enunciado completo no Canvas.
 ## Print da versão responsiva com CSS puro
 
 ![home page](<public/imgs/print home page.png>)
-![responsividade](<public/imgs/print home page.png>)
+![responsividade](<public/imgs/print responsividade.png>)
 
 ## Print da versão responsiva com Bootstrap
 
