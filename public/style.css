@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 20px 4%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.titulonav {
+    color: #7500b8;
+    font-weight: bold;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #7500b8;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+header nav ul li {
+    padding: 10px 0;
+    position: relative;
+}
+
+header nav ul li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #7500b8;
+    transition: width 0.3s ease;
+}
+
+header nav ul li:hover::after {
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #7500b8;
+    border-color: #7500b8;
+}
+
+.btn-primary:hover {
+    background-color: #5a008f;
+    border-color: #5a008f;
+}
+
+.bebidas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+main .img-gin img,
+main .img-mule img,
+main .img-pina img,
+main .img-mojito img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+main .img-gin img:hover,
+main .img-mule img:hover,
+main .img-pina img:hover,
+main .img-mojito img:hover {
+    transform: scale(1.05);
+}
+
+.img-gin, .img-mule, .img-pina, .img-mojito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.img-gin:hover, .img-mule:hover, .img-pina:hover, .img-mojito:hover {
+    transform: translateY(-5px);
+}
+
+.tsobrenos {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.sobrenos {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main .text-imagem {
+    text-align: justify;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.ingredientes {
+    list-style-type: none;
+    margin-top: 15px;
+    padding: 0;
+    text-align: left;
+}
+
+.ingredientes li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.ingredientes li::before {
+    content: "•";
+    color: #7500b8;
+    position: absolute;
+    left: 0;
+}
+
+footer {
+    background-color: #7500b8;
+    color: white;
+    padding: 30px 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-info {
+    text-align: left;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .pesquisa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    header nav ul li {
+        padding: 5px 0;
+    }
+
+    .bebidas {
+        grid-template-columns: 1fr;
+    }
+
+    .tsobrenos {
+        padding: 30px 15px;
+    }
+
+    .sobrenos {
+        padding: 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 15px 4%;
+    }
+
+    header .btn-contato button {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .img-gin, .img-mule, .img-pina, .img-mojito {
+        padding: 15px;
+    }
+
+    main .text-imagem {
+        padding: 0 15px;
+    }
+}
+
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-radius: 12px 12px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}

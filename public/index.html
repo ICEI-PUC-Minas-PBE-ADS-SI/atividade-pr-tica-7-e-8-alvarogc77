@@ -1,13 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>AS MELHORES RECEITAS</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
 </head>
+
 <body>
-    <h1>Olá mundo</h1>
+    <header class="sticky-top bg-white shadow-sm">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand titulonav" href="#">DRINK FAST</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#drinks">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#gin-tonica">Gin Tônica</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#moscow-mule">Moscow Mule</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pina-colada">Piña Colada</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mojito">Mojito</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobre">Sobre nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="detalhes.html">Detalhes</a>
+                            </li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/qr/OTZYBGPVHDO6G1?autoload=1&app_absent=0" class="btn btn-primary ms-3">Sugira</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bebidas py-5" id="drinks">
+            <div class="container">
+                <div class="row row-cols-1 g-4">
+                    <div class="col" id="gin-tonica">
+                        <div class="card h-100 shadow-sm">
+                            <div class="d-flex justify-content-center">
+                                <img src="imgs/gin_tonica.webp" class="card-img-top w-25" alt="Gin Tônica">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Gin Tônica</h2>
+                                <p class="card-text">O gin tônica surgiu no século XIX. Originalmente, o gin era usado para fins medicinais. O
+                                    tônico, com quinina, ajudava a combater a malária. Soldados britânicos na Índia começaram a misturar
+                                    gin com tônico para tornar o remédio mais palatável. Com o tempo, a bebida se popularizou entre os
+                                    civis. Hoje, é um dos coquetéis mais consumidos no mundo.</p>
+                                <ul class="ingredientes">
+                                    <li>50 ml de gin</li>
+                                    <li>2 doses de água tônica</li>
+                                    <li>Gelo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="moscow-mule">
+                        <div class="card h-100 shadow-sm">
+                            <div class="d-flex justify-content-center">
+                                <img src="imgs/moscow_mule.avif" class="card-img-top w-25" alt="Moscow Mule">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Moscow Mule</h2>
+                                <p class="card-text">O Moscow Mule é um coquetel que ganhou popularidade na década de 1940 nos Estados Unidos.
+                                    Sua base é o vodka, misturado com gengibre e suco de limão, e é servido tradicionalmente em uma
+                                    caneca de cobre. A história do drink está ligada à combinação de dois produtos: o vodka
+                                    russo e a cerveja de gengibre, um dos produtos mais consumidos nos EUA na época.</p>
+                                <ul class="ingredientes">
+                                    <li>50 ml de vodka</li>
+                                    <li>3 colheres (chá) de xarope de gengibre</li>
+                                    <li>100 ml de água com gás</li>
+                                    <li>Suco de ½ limão</li>
+                                    <li>½ colher (sopa) de açúcar</li>
+                                    <li>Gelo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="pina-colada">
+                        <div class="card h-100 shadow-sm">
+                            <div class="d-flex justify-content-center">
+                                <img src="imgs/pina_colada.webp" class="card-img-top w-25" alt="Piña Colada">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Piña Colada</h2>
+                                <p class="card-text">A Piña Colada é um coquetel tropical originado em Porto Rico na década de 1950. Sua receita
+                                    clássica combina rum, creme de coco e suco de abacaxi, criando um sabor doce e refrescante.
+                                    Acredita-se que tenha sido criada por Ramón "Monchito" Marrero, bartender do Caribe Hilton,
+                                    que buscava um drink que capturasse a essência da ilha.</p>
+                                <ul class="ingredientes">
+                                    <li>1 e 1/2 doses de rum</li>
+                                    <li>3 doses de suco de abacaxi</li>
+                                    <li>1 dose leite de coco</li>
+                                    <li>1 dose leite condensado</li>
+                                    <li>6 pedras de gelo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="mojito">
+                        <div class="card h-100 shadow-sm">
+                            <div class="d-flex justify-content-center">
+                                <img src="imgs/mojito.webp" class="card-img-top w-25" alt="Mojito">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Mojito</h2>
+                                <p class="card-text">O Mojito é um clássico cubano que remonta ao século XVI, quando os indígenas já usavam a mistura
+                                    de folhas de hortelã, rum, açúcar e limão. A versão moderna do coquetel ganhou fama em Havana,
+                                    nos anos 1930, especialmente com a preferência de figuras históricas como Ernest Hemingway.</p>
+                                <ul class="ingredientes">
+                                    <li>1 limão</li>
+                                    <li>1 dose de rum branco (cerca de 50 ml)</li>
+                                    <li>3 ramos de hortelã</li>
+                                    <li>1 colher (chá) de açúcar</li>
+                                    <li>Cubos de gelo a gosto</li>
+                                    <li>Club soda ou água com gás para completar</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="tsobrenos py-5 bg-light" id="sobre">
+            <div class="container">
+                <h1 class="text-center mb-4">Sobre Nós</h1>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <p class="text-center">
+                            Drink Fast, o seu guia definitivo para a preparação dos melhores coquetéis clássicos. Nosso objetivo é
+                            oferecer um espaço dedicado aos apreciadores da coquetelaria, fornecendo receitas detalhadas e
+                            instruções passo a passo para a criação de drinks icônicos, como Gin Tônica, Moscow Mule, Piña Colada e
+                            Mojito.
+                            Acreditamos que a arte da mixologia deve ser acessível a todos, desde iniciantes até entusiastas
+                            experientes. Por isso, disponibilizamos informações claras e precisas para que você possa preparar seus
+                            drinks favoritos com facilidade e perfeição.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-primary text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">© 2024 Drink Fast - Todos os direitos reservados</p>
+                    <p class="mb-0">Desenvolvido por Álvaro Gonçalves de Carvalho</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://api.whatsapp.com/qr/OTZYBGPVHDO6G1?autoload=1&app_absent=0" class="text-white">
+                        <img src="imgs/whatsapp.png" alt="WhatsApp" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
