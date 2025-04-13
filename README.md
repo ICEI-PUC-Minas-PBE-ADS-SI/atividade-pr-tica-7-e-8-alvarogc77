@@ -21,6 +21,7 @@ Leia o enunciado completo no Canvas.
 
 ![home page](<public/imgs/print home page.png>)
 ![responsividade](<public/imgs/print responsividade.png>)
+![responsividade 2](<public/imgs/print responsividade 2.png>)
 
 ## Print da versão responsiva com Bootstrap
 
