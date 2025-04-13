@@ -12,10 +12,10 @@ Leia o enunciado completo no Canvas.
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Álvaro Gonçalves de Carvalho
+- Matricula: 879197
+- Proposta de projeto escolhida: Site de receitas de drinks.
+- Breve descrição sobre seu projeto: Um site em que o usuário conhece drinks renomados e encontra seu modo de preparo.
 
 ## Print da versão responsiva com CSS puro
 
